@@ -1,7 +1,7 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('Countries', {
+    await queryInterface.createTable('Users', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -11,11 +11,14 @@ module.exports = {
       name: {
         type: Sequelize.STRING,
       },
-      sale_id: {
+      phone: {
+        type: Sequelize.BIGINT,
+      },
+      order_id: {
         type: Sequelize.INTEGER,
         references: {
           model: {
-            tableName: 'Sales',
+            tableName: 'Orders',
           },
           key: 'id',
         },
@@ -33,6 +36,6 @@ module.exports = {
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('Countries');
+    await queryInterface.dropTable('Users');
   },
 };

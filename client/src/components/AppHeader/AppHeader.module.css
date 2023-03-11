@@ -1,0 +1,11 @@
+.header {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 5px;
+    font-size: 30px;
+    border-bottom: .1px solid;
+    padding: 4px;
+    
+}
