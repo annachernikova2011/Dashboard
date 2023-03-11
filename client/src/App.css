@@ -4,6 +4,22 @@ body {
     box-sizing: border-box;
 
 }
-.container {
+.App {
+    /* width: 100vw; */
+    width: 1180px;
+    margin: 0 auto;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
+}
+.container {
+    width: 1180px;
+    height: 100vh;
+    margin: 0 auto
+}
+.side--contetnt__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 1;
 }

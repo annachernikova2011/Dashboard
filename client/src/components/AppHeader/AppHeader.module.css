@@ -5,7 +5,7 @@
     align-items: center;
     letter-spacing: 5px;
     font-size: 30px;
-    border-bottom: .1px solid;
+    border-bottom: .1px solid rgba(9, 7, 7, 0.3);
     padding: 4px;
     
 }
