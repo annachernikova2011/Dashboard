@@ -2,3 +2,7 @@
     display: flex;
     margin: 30px 40px
 }
+.wrapper__order__users {
+    display: flex;
+    justify-content: space-between;
+}

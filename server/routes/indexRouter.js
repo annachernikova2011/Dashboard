@@ -8,7 +8,8 @@ router.get('/orders', async (req, res) => {
   res.json(allOrders);
 });
 router.get('/users', async (req, res) => {
-  const allUsers = await User.findAll();
+  const allUsers = await User.findAll({ include: Order });
+  console.log(allUsers);
   res.json(allUsers);
 });
 module.exports = router;
